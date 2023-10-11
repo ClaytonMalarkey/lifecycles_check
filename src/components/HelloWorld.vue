@@ -35,6 +35,18 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  beforeCreated() {
+    console.log("beforeCreated")
+  },
+  created(){
+    console.log("created")
+  },
+  beforeMount() {
+    console.log("before mounting component")
+  },
+  mounted() {
+    console.log("mounted")
   }
 }
 </script>
